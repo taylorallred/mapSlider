@@ -1,0 +1,188 @@
+  .renewal-message-map {
+    background-image: url(//assets.cdn.aws.vivint.com/global/vivint.com/sections/renewal/blur-1.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 606px;
+    padding: 75px 0 0;
+  }
+
+  .renewal-message-map h2 {
+    text-align: center;
+  }
+  .renewal-message-map a {
+    width: 300px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .message-map-box {
+    margin-top: 20px;
+    min-width: 885px; 
+  }
+  .message-map-box #map {
+    display: inline-block;
+    margin-top: 20px;
+  }
+  .message-map-box path:hover {
+    cursor: pointer;
+  }
+  .message-map-box .message-box {
+    display: inline-block;
+    background-color: white;
+    padding: 65px 40px 40px;
+    position: relative;
+    width: 380px;
+    vertical-align: top;
+    margin-top: 100px;
+    min-height: 86px;
+    box-sizing: border-box;
+  }
+   /*.message-map-box .message-box:before {
+      position: absolute;
+      bottom: -20px;
+      left: 15px;
+      content: '';
+      border-top: 10px solid white;
+      border-right: 10px solid rgba(255, 0, 0, 0);
+      border-bottom: 10px solid rgba(255, 255, 0, 0);
+      border-left: 10px solid white;
+  } */
+   .message-map-box .message-box:before {
+      position: absolute;
+      bottom: -18px;
+      left: 15px;
+      content: '';  
+      height: 20px;
+      width: 20px;
+      background-image: url(http://assets.cdn.aws.vivint.com/global/vivint.com/sections/renewal/triangle-white.png);
+   }
+   .message-map-box .message-box .name {
+    color:white;
+    text-align: right;
+    font-size: 10px;
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+  }
+   .message-map-box .message-box img {
+    position: absolute;
+    top: -33px;
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    margin-left: -40px;
+    /*border: 2px solid white;
+    border-radius: 50px; */
+  }
+   .message-map-box .message-box span {
+    font-weight: bolder;
+    font-size: 1.1em;
+  }
+  .message-map-box .message-box h5 {
+    line-height: 1.4em;
+  }
+  .message-map-box .message-box h5:before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    width: 24px;
+    background: url(http://assets.cdn.aws.vivint.com/global/vivint.com/sections/renewal/quotes.png);
+    height: 18px;
+    background-repeat: no-repeat;
+  }
+   .message-map-box .slide-circles {
+    text-align: center;
+  }
+   .message-map-box .circle {
+    content: '';
+    width: 15px;
+    height: 15px;
+    /* border: 1px solid white;
+    border-radius: 10px; 
+    background-image: url(http://assets.cdn.aws.vivint.com/global/vivint.com/sections/renewal/circles-active.png);
+    background-position: 0 -18px;
+    background-size: 100%;
+    background-repeat: no-repeat; */
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+    position: relative;
+  border: 1px solid white;
+    border-radius: 20px;
+  }
+  .message-map-box .circle.active {
+    background-position: 0px 0px;
+  }
+  .message-map-box .circle.active:before {
+    background-color: white;
+    content: '';
+    width: 13px;
+    height: 13px;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+  }
+   .message-map-box .circle:hover {
+    cursor: pointer;
+  }
+  /* .message-map-box .circle.active:after {
+      background-color: white;
+      content: '';
+      width: 20px;
+      height: 19px;
+      border-radius: 10px;
+      display: inline-block;
+      vertical-align: top;
+      position: absolute;
+      top: 3px;
+      left: 3px;
+  }*/
+
+  @media (max-width: 960px) {
+    .message-map-box {
+      min-width: 0;
+      min-height: 309px;
+    }
+    .message-map-box #map {
+      display: none;
+    }
+    .message-map-box .message-box {
+      margin: 100px auto;
+      display: block;
+      max-width: 95%;
+    }
+    .renewal-message-map h2 {
+      font-size: 2.1em;
+      margin: auto 12%;
+    }
+    .renewal-message-map a {
+    max-width: 80%;
+    margin: 100px auto auto;
+    
+  }
+
+  }
+
+
+  @media (max-width: 768px) {
+      
+  .message-map-box {
+      margin-bottom: 50px;
+      min-height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 400px;
+      background-size: auto 100%;
+      min-height:300px;
+    }
+    .message-map-box .message-box {
+      margin: 65px 5% 0;
+    }
+
+  }
